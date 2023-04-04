@@ -7,7 +7,7 @@ function SideMenuBar() {
     <div className='sidebar'>
      <div className='sidebar-top'>
         <div className='logo'>
-          <img src='https://dummyimage.com/80x80/000/fff&text=Logo' alt='Logo' />
+        <img src='CompanyLogo.png' alt='Logo' />
         </div>
       </div>
       <ul className='sidebarList'>

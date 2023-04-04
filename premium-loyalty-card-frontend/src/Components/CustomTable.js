@@ -1,13 +1,17 @@
 import React from 'react';
 import { useTable } from 'react-table';
+import '../Styles/CustomTable.css';
 
-const Table = ({ data, columns, onRowClick }) => {
+const Table = ({ title , data, columns, onRowClick }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = useTable({
     columns,
     data,
   });
 
   return (
+    <div className="table">
+      <h2 className='table-title'>{title}</h2>
+    <div className="card">
     <table {...getTableProps()}>
       <thead>
         {headerGroups.map(headerGroup => (
@@ -31,6 +35,8 @@ const Table = ({ data, columns, onRowClick }) => {
         })}
       </tbody>
     </table>
+    </div>
+    </div>
   );
 };
 
