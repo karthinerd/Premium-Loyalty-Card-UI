@@ -3,39 +3,36 @@ import '../Styles/SideMenuBar.css';
 import { SidebarData } from './SidebarData';
 
 function SideMenuBar() {
+  const currentPath = window.location.pathname;
+  
   return (
-    <div className='sidebar'>
-     <div className='sidebar-top'>
+    <div className='sidebar sidebar-left'>
+      <div className='sidebar-top'>
         <div className='logo'>
-        <img src='CompanyLogo.png' alt='Logo' />
+          <img src='CompanyLogo.png' alt='Logo' />
         </div>
       </div>
       <ul className='sidebarList'>
-        {SidebarData.map((val,key)=>{
-          return ( 
-            <li key={key} 
-            onClick={ () => {window.location.pathname=val.link} }
-            className='row'
-            id={window.location.pathname === val.link? "active" : ""}
+        {SidebarData.map((val, key) => {
+          const isSelected = currentPath === val.link;
+          const className = `row ${isSelected ? 'selected' : ''}`;
+          return (
+            <li
+              key={key}
+              onClick={() => {
+                window.location.pathname = val.link;
+              }}
+              className={className}
             >
-              <div id='icon'>
-                {val.icon}
-              </div>{" "}
-              <div id='title'>
-                {val.title}
-              </div>
+              <div id='icon'>{val.icon}</div>
+              <div id='title'>{val.title}</div>
+              {isSelected && <div className='indicator' />}
             </li>
           );
         })}
       </ul>
-      <div className='sidebar-bottom'>
-        <div className='profile'>
-          <img src='https://dummyimage.com/50x50/000/fff&text=Profile' alt='Profile' />
-          <span>karthi</span>
-        </div>
-      </div>
     </div>
-  )
+  );
 }
 
-export default SideMenuBar
+export default SideMenuBar;
