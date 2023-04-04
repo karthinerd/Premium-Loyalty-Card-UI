@@ -49,8 +49,17 @@ const MyTable = () => {
   };
 
   return (
-    <div className="container">
-      <Table title="Posts" data={displayedData} columns={columns} onRowClick={handleRowClick} style={{ marginBottom: '20px' }} />
+    <div>
+      <Table title="Posts" data={displayedData} columns={columns} onRowClick={handleRowClick} />
+      <div className="pagination">
+        <PaginationRounded
+          currentPage={currentPage}
+          totalPages={pageCount}
+          onPageChange={handleChangePage}
+          pageStyle={{ color: '#F4A26C' }}
+          selectedPageStyle={{ color: '#F4A26C', fontWeight: 'bold' }}
+        />
+      </div>
     </div>
   );
 };
