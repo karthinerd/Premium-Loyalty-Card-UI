@@ -1,6 +1,8 @@
 import React from "react";
 import { useTable } from "react-table";
 import "../Styles/CustomTable.css";
+import CustomButton from "./CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const Table = ({
   title,
@@ -11,6 +13,8 @@ const Table = ({
   titleClassName,
   cardClassName,
   clickableRows,
+  buttonClassName,
+  buttonTextName,
 }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({
@@ -18,9 +22,20 @@ const Table = ({
       data,
     });
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate.push("/add-subscription");
+  };
+
   return (
     <div className={tableClassName}>
       <h2 className={titleClassName}>{title}</h2>
+      <CustomButton
+        className={buttonClassName}
+        text={buttonTextName}
+        onClick={handleClick}
+      />
       <div className={cardClassName}>
         <table {...getTableProps()}>
           <thead>

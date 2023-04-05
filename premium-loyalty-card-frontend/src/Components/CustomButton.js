@@ -1,9 +1,9 @@
 import React from "react";
-import "./Button.css";
+import "../Styles/CustomButton.css";
 
-const CustomButton = ({ color, text, onClick }) => {
+const CustomButton = ({ className, text, onClick }) => {
   return (
-    <button className={`custom-button ${color}`} onClick={onClick}>
+    <button className={className} onClick={onClick}>
       {text}
     </button>
   );

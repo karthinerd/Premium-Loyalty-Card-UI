@@ -1,0 +1,14 @@
+.add-subscription {
+    background-color: #F7F7F7; /* Green */
+    border: 1px solid #225544;
+    color: #225544;
+    width: 150px;
+    height: 50px;
+    left: 1378px;
+    top: 197px;
+    border-radius: 20px;
+    margin-left: 1080px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  

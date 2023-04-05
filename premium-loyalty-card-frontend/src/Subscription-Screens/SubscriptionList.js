@@ -72,6 +72,8 @@ const SubscriptionList = () => {
         titleClassName="table-title"
         cardClassName="card"
         clickableRows={true}
+        buttonClassName="add-subscription "
+        buttonTextName="+ Create Subscription"
       />
       <div className="pagination-container">
         <PaginationRounded
