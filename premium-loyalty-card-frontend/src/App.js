@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomerInfo from "./Customer-Screens/CustomerInfo";
 import SubscriptionList from "./Subscription-Screens/SubscriptionList";
 import SubscriptionInfo from "./Subscription-Screens/SubscriptionInfo";
+import VoucherList from "./Voucher-Screens/VouchersList";
+import VoucherInfo from "./Voucher-Screens/VoucherInfo";
+import UserList from "./User-Screens/UserList";
+import VendorList from "./Vendor-Screens/VendorList";
+import VendorInfo from "./Vendor-Screens/VendorInfo";
 
 function App() {
   return (
@@ -18,6 +23,11 @@ function App() {
           <Route path="/customerInfo/:id" element={<CustomerInfo />} />
           <Route path="/subscriptionsList" element={<SubscriptionList />} />
           <Route path="/SubscriptionInfo/:id" element={<SubscriptionInfo />} />
+          <Route path="/vouchersList" element={<VoucherList />} />
+          <Route path="/voucherInfo/:id" element={<VoucherInfo />} />
+          <Route path="/usersList" element={<UserList />} />
+          <Route path="/vendorsList" element={<VendorList />} />
+          <Route path="/vendorInfo/:id" element={<VendorInfo />} />
         </Routes>
       </Router>
     </div>

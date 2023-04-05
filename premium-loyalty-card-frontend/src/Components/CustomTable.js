@@ -15,6 +15,7 @@ const Table = ({
   clickableRows,
   buttonClassName,
   buttonTextName,
+  showButton // new prop to conditionally render the button
 }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({
@@ -31,11 +32,13 @@ const Table = ({
   return (
     <div className={tableClassName}>
       <h2 className={titleClassName}>{title}</h2>
-      <CustomButton
-        className={buttonClassName}
-        text={buttonTextName}
-        onClick={handleClick}
-      />
+      {showButton && ( // render the button only if showButton is true
+        <CustomButton
+          className={buttonClassName}
+          text={buttonTextName}
+          onClick={handleClick}
+        />
+      )}
       <div className={cardClassName}>
         <table {...getTableProps()}>
           <thead>
