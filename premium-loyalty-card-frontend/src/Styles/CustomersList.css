@@ -1,10 +1,6 @@
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  table {
-    margin-bottom: 20px;
-  }
-  
+
+.pagination-container {
+  margin-left: 200px;
+  background-color: rgb(221, 220, 220);
+  color: white;
+}

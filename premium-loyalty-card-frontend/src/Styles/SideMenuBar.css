@@ -61,16 +61,6 @@
   display: block;
 }
 
-/* .sidebarList .row .indicator {
-  width: 4px;
-  height: 24px;
-  background-color: #EE9179;
-  margin-right: 8px;
-  position: relative;
-  top: 5px;
-} */
-
-
 .sidebar-top {
   height: 60px;
   display: flex;

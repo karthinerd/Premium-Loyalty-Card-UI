@@ -4,51 +4,62 @@ import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import CustomerSubscription from "../Customer-Screens/CustomerSubscription";
+import CustomerVoucher from "../Customer-Screens/CustomerVoucher";
 
 const MyTabs = styled(Tabs)({
   "& .MuiTabs-indicator": {
-    backgroundColor: "#000000",
+    backgroundColor: "#EE9179",
   },
 });
 
-const MyTab = styled(Tab)({
+const MyTab = styled(Tab)(({ isSelected }) => ({
   textTransform: "none",
   fontSize: "14px",
   fontWeight: "bold",
-  padding: "12px",
-  color: "#000000",
+  padding: "10px",
+  color: isSelected ? "#" : "#7B7B7B",
+  border: "1px solid white",
+  borderRadius: "10px",
+  boxShadow: isSelected
+    ? "0px 0px 12px rgba(238, 145, 121, 0.4), 0px 0px 0px 4px rgba(255, 255, 255, 0.2)"
+    : "none",
   "&.Mui-selected": {
-    color: "#ffffff",
-    backgroundColor: "#000000",
+    color: "#000000",
   },
-});
+}));
 
 function CenteredTabs(props) {
-  const { value, tabs, onChange } = props;
+  const { tabs } = props;
+  const [selectedTab, setSelectedTab] = useState(0);
 
-  const handleChange = (event, newValue) => {
-    onChange(newValue);
+  const handleTabChange = (event, newValue) => {
+    setSelectedTab(newValue);
   };
 
   return (
     <Box sx={{ width: "100%" }}>
-      <MyTabs value={value} onChange={handleChange} centered>
+      <MyTabs value={selectedTab} onChange={handleTabChange} centered>
         {tabs.map((tab, index) => (
-          <MyTab key={index} label={tab.label} />
+          <MyTab
+            key={index}
+            label={tab.label}
+            isSelected={selectedTab === index}
+          />
         ))}
       </MyTabs>
+      {selectedTab === 1 && <CustomerSubscription />}
+      {selectedTab === 2 && <CustomerVoucher />}
     </Box>
   );
 }
 
 CenteredTabs.propTypes = {
-  value: PropTypes.number.isRequired,
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
-  onChange: PropTypes.func.isRequired,
 };
 
 export default CenteredTabs;

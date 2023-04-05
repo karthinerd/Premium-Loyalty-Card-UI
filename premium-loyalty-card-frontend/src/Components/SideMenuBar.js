@@ -1,21 +1,21 @@
-import React from 'react';
-import '../Styles/SideMenuBar.css';
-import { SidebarData } from './SidebarData';
+import React from "react";
+import "../Styles/SideMenuBar.css";
+import { SidebarData } from "./SidebarData";
 
 function SideMenuBar() {
   const currentPath = window.location.pathname;
-  
+
   return (
-    <div className='sidebar sidebar-left'>
-      <div className='sidebar-top'>
-        <div className='logo'>
-          <img src='CompanyLogo.png' alt='Logo' />
+    <div className="sidebar sidebar-left">
+      <div className="sidebar-top">
+        <div className="logo">
+          <img src="CompanyLogo.png" alt="Logo" />
         </div>
       </div>
-      <ul className='sidebarList'>
+      <ul className="sidebarList">
         {SidebarData.map((val, key) => {
           const isSelected = currentPath === val.link;
-          const className = `row ${isSelected ? 'selected' : ''}`;
+          const className = `row ${isSelected ? "selected" : ""}`;
           return (
             <li
               key={key}
@@ -24,9 +24,9 @@ function SideMenuBar() {
               }}
               className={className}
             >
-              <div id='icon'>{val.icon}</div>
-              <div id='title'>{val.title}</div>
-              {isSelected && <div className='indicator' />}
+              <div id="icon">{val.icon}</div>
+              <div id="title">{val.title}</div>
+              {isSelected && <div className="indicator" />}
             </li>
           );
         })}

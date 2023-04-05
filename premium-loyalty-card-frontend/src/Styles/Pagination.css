@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-left: 500px;
+  }
+  
+.subPagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 450px;
+  }
