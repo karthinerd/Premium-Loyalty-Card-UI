@@ -41,8 +41,9 @@
   }
 
   .table-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    font-style: normal;
     padding-bottom: 20px;
     margin-left: 110px;
     color: #1B223E;

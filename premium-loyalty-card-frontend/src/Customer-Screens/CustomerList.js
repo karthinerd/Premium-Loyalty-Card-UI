@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Table from '../Components/CustomTable';
 import PaginationRounded from '../Components/TablePagination';
+import { useNavigate } from 'react-router-dom';
 
 const MyTable = () => {
 
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(10);
+
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -46,6 +50,7 @@ const MyTable = () => {
 
   const handleRowClick = (row) => {
     console.log('Clicked row:', row.original.id);
+    navigate(`/customerInfo/${row.original.id}`);
   };
 
   return (
