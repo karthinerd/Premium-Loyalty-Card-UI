@@ -4,8 +4,6 @@ import { styled } from "@mui/material/styles";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import CustomerSubscription from "../Customer-Screens/CustomerSubscription";
-import CustomerVoucher from "../Customer-Screens/CustomerVoucher";
 
 const MyTabs = styled(Tabs)({
   "& .MuiTabs-indicator": {
@@ -30,12 +28,14 @@ const MyTab = styled(Tab)(({ isSelected }) => ({
 }));
 
 function CenteredTabs(props) {
-  const { tabs } = props;
+  const { tabs, tabComponents } = props;
   const [selectedTab, setSelectedTab] = useState(0);
 
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue);
   };
+
+  const TabComponent = tabComponents[selectedTab];
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -48,8 +48,7 @@ function CenteredTabs(props) {
           />
         ))}
       </MyTabs>
-      {selectedTab === 1 && <CustomerSubscription />}
-      {selectedTab === 2 && <CustomerVoucher />}
+      <TabComponent />
     </Box>
   );
 }
@@ -60,6 +59,7 @@ CenteredTabs.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  tabComponents: PropTypes.arrayOf(PropTypes.elementType).isRequired,
 };
 
 export default CenteredTabs;

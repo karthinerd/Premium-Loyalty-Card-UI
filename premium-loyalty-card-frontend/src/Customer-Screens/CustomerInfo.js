@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import CenteredTabs from "../Components/ThreeTabs";
 import "../Styles/CustomerInfo.css";
+import CustomerVoucher from "./CustomerVoucher";
+import CustomerSubscription from "./CustomerSubscription";
 
 const MyTable = () => {
-  const [value, setValue] = useState(0);
-
-  const handleTabChange = (newValue) => {
-    setValue(newValue);
-  };
 
   const tabs = [
     { label: "Info" },
@@ -15,9 +12,15 @@ const MyTable = () => {
     { label: "Voucher" },
   ];
 
+  const tabComponents = [
+    CustomerSubscription,
+    CustomerSubscription,
+    CustomerVoucher,
+  ];
+
   return (
     <div className="tabs-container">
-      <CenteredTabs value={value} tabs={tabs} onChange={handleTabChange} />
+      <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
     </div>
   );
 };
