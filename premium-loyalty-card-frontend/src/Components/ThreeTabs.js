@@ -15,6 +15,7 @@ const MyTab = styled(Tab)(({ isSelected }) => ({
   textTransform: "none",
   fontSize: "14px",
   fontWeight: "bold",
+  fontFamily:"inter",
   padding: "10px",
   color: isSelected ? "#" : "#7B7B7B",
   border: "1px solid white",

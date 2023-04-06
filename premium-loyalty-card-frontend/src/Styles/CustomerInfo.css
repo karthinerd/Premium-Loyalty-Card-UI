@@ -1,4 +1,24 @@
 .tabs-container {
-    padding-top: 70px; /* adjust as needed to avoid overlapping with navbar */
+    padding-top: 10px; /* adjust as needed to avoid overlapping with navbar */
     margin-left: 250px; /* adjust as needed to avoid overlapping with sidebar */
   }
+
+.back-button{
+  padding-top: 90px; 
+  margin-left: 350px; 
+  display: flex;
+  align-items: center;
+}
+
+.customer-name{
+  display: "inline-block";
+  padding-left: 15px;
+  font-weight: bold;
+  font-family: intern;
+  color: #1B223E ;
+  font-family: inter;
+}
+
+.make-grey{
+  background-color: rgb(221, 220, 220);
+}

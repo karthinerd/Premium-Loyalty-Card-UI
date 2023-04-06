@@ -11,6 +11,7 @@ import VoucherInfo from "./Voucher-Screens/VoucherInfo";
 import UserList from "./User-Screens/UserList";
 import VendorList from "./Vendor-Screens/VendorList";
 import VendorInfo from "./Vendor-Screens/VendorInfo";
+import LoginPage from "./Login/LoginPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/usersList" element={<UserList />} />
           <Route path="/vendorsList" element={<VendorList />} />
           <Route path="/vendorInfo/:id" element={<VendorInfo />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </Router>
     </div>

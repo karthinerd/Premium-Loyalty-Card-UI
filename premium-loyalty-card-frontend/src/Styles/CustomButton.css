@@ -10,5 +10,17 @@
     margin-left: 1080px;
     margin-bottom: 10px;
     cursor: pointer;
+    font-family: inter;
   }
   
+  .edit-customer{
+    background-color: #EE9179; /* Green */
+    border: 1px solid #EE9179;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-family: inter;
+  }

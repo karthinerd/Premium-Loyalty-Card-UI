@@ -2,6 +2,7 @@ import React from "react";
 import CenteredTabs from "../Components/ThreeTabs";
 import "../Styles/CustomerInfo.css";
 import VoucherCoupons from "./Voucher-CouponCodes";
+import ArrowIcon from "../Components/ArrowIcon";
 
 const VoucherInfo = () => {
 
@@ -16,8 +17,14 @@ const VoucherInfo = () => {
   ];
 
   return (
-    <div className="tabs-container">
-      <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
+    <div className="make-grey">
+      <div className="back-button">
+        <ArrowIcon destination="/vouchersList" />
+        <h1 className="customer-name">Karthi</h1>
+      </div>
+      <div className="tabs-container">
+        <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
+      </div>
     </div>
   );
 };

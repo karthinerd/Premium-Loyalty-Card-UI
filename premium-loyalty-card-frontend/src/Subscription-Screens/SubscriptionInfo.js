@@ -3,9 +3,9 @@ import CenteredTabs from "../Components/ThreeTabs";
 import "../Styles/CustomerInfo.css";
 import SubscriptionVoucher from "./Subscription-Voucher";
 import SubscriptionCustomer from "./Subscription-Customer";
+import ArrowIcon from "../Components/ArrowIcon";
 
 const SubscriptionInfo = () => {
-
   const tabs = [
     { label: "Info" },
     { label: "Customers" },
@@ -15,12 +15,18 @@ const SubscriptionInfo = () => {
   const tabComponents = [
     SubscriptionVoucher,
     SubscriptionCustomer,
-    SubscriptionVoucher
+    SubscriptionVoucher,
   ];
 
   return (
-    <div className="tabs-container">
-      <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
+    <div className="make-grey">
+      <div className="back-button">
+        <ArrowIcon destination="/subscriptionsList" />
+        <h1 className="customer-name">Karthi</h1>
+      </div>
+      <div className="tabs-container">
+        <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
+      </div>
     </div>
   );
 };

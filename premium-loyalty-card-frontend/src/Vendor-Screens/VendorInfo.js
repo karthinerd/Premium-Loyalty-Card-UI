@@ -2,6 +2,7 @@ import React from "react";
 import CenteredTabs from "../Components/ThreeTabs";
 import "../Styles/CustomerInfo.css";
 import VendorVouchers from "./Vendor-Vouchers";
+import ArrowIcon from "../Components/ArrowIcon";
 
 const VendorInfo = () => {
 
@@ -16,8 +17,14 @@ const VendorInfo = () => {
   ];
 
   return (
-    <div className="tabs-container">
-      <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
+    <div className="make-grey">
+      <div className="back-button">
+        <ArrowIcon destination="/vendorsList" />
+        <h1 className="customer-name">Karthi</h1>
+      </div>
+      <div className="tabs-container">
+        <CenteredTabs tabs={tabs} tabComponents={tabComponents} />
+      </div>
     </div>
   );
 };

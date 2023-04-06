@@ -64,7 +64,7 @@ const VendorVouchers = () => {
         clickableRows={false}
         buttonClassName="add-subscription "
         buttonTextName="Import CSV"
-        showButton='true'
+        showButton="true"
       />
 
       <div>
