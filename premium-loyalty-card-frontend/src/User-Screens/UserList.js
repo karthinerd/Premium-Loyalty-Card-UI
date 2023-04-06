@@ -64,6 +64,10 @@ const UserList = () => {
         titleClassName="table-title"
         cardClassName="card"
         clickableRows={true}
+        buttonClassName="add-subscription "
+        buttonTextName="+ Create Users"
+        showButton='true'
+        buttonPath="/createUser"
       />
       <div className="pagination-container">
         <PaginationRounded

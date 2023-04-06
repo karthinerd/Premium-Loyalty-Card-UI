@@ -12,6 +12,8 @@ import UserList from "./User-Screens/UserList";
 import VendorList from "./Vendor-Screens/VendorList";
 import VendorInfo from "./Vendor-Screens/VendorInfo";
 import LoginPage from "./Login/LoginPage";
+import EditUser from "./User-Screens/EditUser";
+import CreateUser from "./User-Screens/CreateUser";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/vouchersList" element={<VoucherList />} />
           <Route path="/voucherInfo/:id" element={<VoucherInfo />} />
           <Route path="/usersList" element={<UserList />} />
+          <Route path="/editUserInfo/:id" element={<EditUser />} />
+          <Route path="/createUser" element={<CreateUser />} />
           <Route path="/vendorsList" element={<VendorList />} />
           <Route path="/vendorInfo/:id" element={<VendorInfo />} />
           <Route path="/login" element={<LoginPage />} />

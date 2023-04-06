@@ -73,7 +73,7 @@ const SubscriptionList = () => {
         cardClassName="card"
         clickableRows={true}
         buttonClassName="add-subscription "
-        buttonTextName="+ Create Subscription"
+        buttonTextName="+Create Subscription"
         showButton='true'
       />
       <div className="pagination-container">

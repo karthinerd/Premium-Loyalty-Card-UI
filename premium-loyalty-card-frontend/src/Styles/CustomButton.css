@@ -24,3 +24,40 @@
     cursor: pointer;
     font-family: inter;
   }
+
+  .edit-user-button{
+    background-color: #6D640F; /* Green */
+    border: 1px solid #6D640F;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-family: inter;
+    margin-bottom: 66px;
+  }
+
+  .save-user{
+    background-color: #1B223E;
+    border: 1px solid #1B223E;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inter;
+    margin-top: 20px;
+  }
+  
+  .cancel-save-user{
+    background-color: #F7F7F7;
+    border: 1px solid #225544;
+    color: #225544;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inter;
+    margin-top: 20px;
+  }

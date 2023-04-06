@@ -15,7 +15,8 @@ const Table = ({
   clickableRows,
   buttonClassName,
   buttonTextName,
-  showButton // new prop to conditionally render the button
+  showButton ,
+  buttonPath,
 }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({
@@ -26,7 +27,7 @@ const Table = ({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate.push("/add-subscription");
+    navigate(buttonPath);
   };
 
   return (
