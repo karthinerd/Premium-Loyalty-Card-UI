@@ -14,7 +14,9 @@ import VendorInfo from "./Vendor-Screens/VendorInfo";
 import LoginPage from "./Login/LoginPage";
 import EditUser from "./User-Screens/EditUser";
 import CreateUser from "./User-Screens/CreateUser";
-
+import CreateVendor from "./Vendor-Screens/CreateVendor";
+import SubscriptionCreation from "./Subscription-Screens/SubscriptionCreation";
+import VoucherCreation from "./Voucher-Screens/CreateVoucher";
 function App() {
   return (
     <div className="App">
@@ -33,7 +35,10 @@ function App() {
           <Route path="/createUser" element={<CreateUser />} />
           <Route path="/vendorsList" element={<VendorList />} />
           <Route path="/vendorInfo/:id" element={<VendorInfo />} />
+          <Route path="/createVendor" element={<CreateVendor />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/createSubscription" element={<SubscriptionCreation />} />
+          <Route path="/createVoucher" element={<VoucherCreation />} />
         </Routes>
       </Router>
     </div>

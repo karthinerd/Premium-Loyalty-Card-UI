@@ -79,6 +79,7 @@ const VoucherList = () => {
         buttonClassName="add-subscription "
         buttonTextName="+ Create Vouchers"
         showButton='true'
+        buttonPath='/createVoucher'
       />
       <div className="pagination-container">
         <PaginationRounded

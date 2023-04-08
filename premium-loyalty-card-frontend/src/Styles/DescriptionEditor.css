@@ -1,0 +1,36 @@
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 400px; /* set a fixed height */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .word-count {
+    margin-top: 10px;
+    text-align: right;
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .reset-button {
+    margin-left: 10px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .tox-tinymce {
+    width: 100% !important;
+  }
+  
+  .tox-toolbar__primary {
+    margin-bottom: 0;
+  }
+  

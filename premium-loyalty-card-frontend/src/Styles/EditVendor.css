@@ -1,0 +1,57 @@
+.edit-vendor-title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: inter;
+    color: #225544;
+    padding-bottom: 10px;
+    }
+
+    label{
+        font-family: inter;
+        color: #9F9F9F;
+    }
+
+    .vendor-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px;
+        background-color: #a4a2a2;
+        margin-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+    
+      .vendor-card {
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 60%;
+        margin: auto;
+      }
+
+      .image-upload-field {
+        border: 2px dotted #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom: 100px;
+      }
+      
+
+  .description{
+   border: 1px dotted;
+    width: 600px;
+    height:200px;
+    margin-top:20px;
+    font-family:'inter';
+    margin-bottom: 30px;
+  }
+
+  textarea:focus {
+    outline: none; /* remove default focus outline */
+    border-color: #225355;
+    box-shadow: 0 0 3px #225355;
+  }

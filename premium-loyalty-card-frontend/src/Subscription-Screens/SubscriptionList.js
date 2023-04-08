@@ -75,6 +75,7 @@ const SubscriptionList = () => {
         buttonClassName="add-subscription "
         buttonTextName="+Create Subscription"
         showButton='true'
+        buttonPath='/createSubscription'
       />
       <div className="pagination-container">
         <PaginationRounded

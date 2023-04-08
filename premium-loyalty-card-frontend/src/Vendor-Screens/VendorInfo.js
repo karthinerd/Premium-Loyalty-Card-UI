@@ -3,6 +3,7 @@ import CenteredTabs from "../Components/ThreeTabs";
 import "../Styles/CustomerInfo.css";
 import VendorVouchers from "./Vendor-Vouchers";
 import ArrowIcon from "../Components/ArrowIcon";
+import EditVendor from "./Edit-vendor";
 
 const VendorInfo = () => {
 
@@ -12,7 +13,7 @@ const VendorInfo = () => {
   ];
 
   const tabComponents = [
-    VendorVouchers,
+    EditVendor,
     VendorVouchers,
   ];
 

@@ -75,6 +75,7 @@ const VendorList = () => {
         buttonClassName="add-subscription "
         buttonTextName="+ Create Vendor"
         showButton='true'
+        buttonPath='/createVendor'
       />
       <div className="pagination-container">
         <PaginationRounded

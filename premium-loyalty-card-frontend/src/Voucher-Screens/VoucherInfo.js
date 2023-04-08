@@ -3,6 +3,7 @@ import CenteredTabs from "../Components/ThreeTabs";
 import "../Styles/CustomerInfo.css";
 import VoucherCoupons from "./Voucher-CouponCodes";
 import ArrowIcon from "../Components/ArrowIcon";
+import EditVoucher from "./EditVoucher";
 
 const VoucherInfo = () => {
 
@@ -12,7 +13,7 @@ const VoucherInfo = () => {
   ];
 
   const tabComponents = [
-    VoucherCoupons,
+    EditVoucher,
     VoucherCoupons,
   ];
 

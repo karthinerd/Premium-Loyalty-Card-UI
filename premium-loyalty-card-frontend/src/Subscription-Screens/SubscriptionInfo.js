@@ -4,6 +4,7 @@ import "../Styles/CustomerInfo.css";
 import SubscriptionVoucher from "./Subscription-Voucher";
 import SubscriptionCustomer from "./Subscription-Customer";
 import ArrowIcon from "../Components/ArrowIcon";
+import EditSubscription from "./EditSubscription";
 
 const SubscriptionInfo = () => {
   const tabs = [
@@ -13,7 +14,7 @@ const SubscriptionInfo = () => {
   ];
 
   const tabComponents = [
-    SubscriptionVoucher,
+    EditSubscription,
     SubscriptionCustomer,
     SubscriptionVoucher,
   ];
