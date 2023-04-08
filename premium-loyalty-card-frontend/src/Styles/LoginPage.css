@@ -17,7 +17,8 @@
   }
   
   .login-form h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+    color: #1B223E;
   }
   
   .login-form form {
@@ -44,15 +45,7 @@
   }
   
   .login-form button {
-    background-color: #1e90ff;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
+    margin-bottom: 2rem;
   }
   
   .login-form a {
@@ -60,7 +53,7 @@
   }
   
   .login-image {
-    background-image: url('https://images.unsplash.com/photo-1497316730643-415fac54a2af?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-image: url('../images/LoginImage.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -69,5 +62,6 @@
     bottom: 0;
     right: 40%;
     z-index: -1;
+    background-color: #1B223E;
   }
   

@@ -112,7 +112,7 @@ const EditVoucher = () => {
             />
           </div>
           <div>
-            <label htmlFor="License" style={{ marginRight: "200px" }}>
+            <label htmlFor="License" style={{ marginRight: "235px" }}>
               Original Price
             </label>
             <label htmlFor="phone">Discounted Price</label>
@@ -129,7 +129,7 @@ const EditVoucher = () => {
             <input type="text" id="lastName" className="lastName" />
           </div>
           <div>
-            <label htmlFor="License" style={{ marginRight: "260px" }}>
+            <label htmlFor="License" style={{ marginRight: "300px" }}>
               Vendor
             </label>
             <label htmlFor="phone">Subscription Plan</label>
@@ -149,7 +149,7 @@ const EditVoucher = () => {
             />
           </div>
           <div>
-            <label htmlFor="License" style={{ marginRight: "170px" }}>
+            <label htmlFor="License" style={{ marginRight: "203px" }}>
               Voucher Category
             </label>
             <label htmlFor="phone">Discounted Percentage</label>

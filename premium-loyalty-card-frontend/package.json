@@ -1,6 +1,7 @@
 {
   "name": "premium-loyalty-card-frontend",
   "version": "0.1.0",
+  "homepage": "/login",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

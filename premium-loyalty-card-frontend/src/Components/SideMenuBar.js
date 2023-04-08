@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/SideMenuBar.css";
 import { SidebarData } from "./SidebarData";
+import CompanyLogo from '../images/CompanyLogo.png';
 
 function SideMenuBar() {
   const currentPath = window.location.pathname;
@@ -9,7 +10,7 @@ function SideMenuBar() {
     <div className="sidebar sidebar-left">
       <div className="sidebar-top">
         <div className="logo">
-          <img src="CompanyLogo.png" alt="Logo" />
+          <img src={CompanyLogo} alt="Logo" />
         </div>
       </div>
       <ul className="sidebarList">

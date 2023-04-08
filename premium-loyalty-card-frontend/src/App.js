@@ -17,31 +17,42 @@ import CreateUser from "./User-Screens/CreateUser";
 import CreateVendor from "./Vendor-Screens/CreateVendor";
 import SubscriptionCreation from "./Subscription-Screens/SubscriptionCreation";
 import VoucherCreation from "./Voucher-Screens/CreateVoucher";
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <SideMenuBar />
       <Router>
         <Routes>
-          <Route path="/customersList" element={<CustomerList />} />
-          <Route path="/customerInfo/:id" element={<CustomerInfo />} />
-          <Route path="/subscriptionsList" element={<SubscriptionList />} />
-          <Route path="/SubscriptionInfo/:id" element={<SubscriptionInfo />} />
-          <Route path="/vouchersList" element={<VoucherList />} />
-          <Route path="/voucherInfo/:id" element={<VoucherInfo />} />
-          <Route path="/usersList" element={<UserList />} />
-          <Route path="/editUserInfo/:id" element={<EditUser />} />
-          <Route path="/createUser" element={<CreateUser />} />
-          <Route path="/vendorsList" element={<VendorList />} />
-          <Route path="/vendorInfo/:id" element={<VendorInfo />} />
-          <Route path="/createVendor" element={<CreateVendor />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/createSubscription" element={<SubscriptionCreation />} />
-          <Route path="/createVoucher" element={<VoucherCreation />} />
+          <Route path="/*" element={<WithNavBarAndSideMenuBar />} />
         </Routes>
       </Router>
     </div>
+  );
+}
+
+function WithNavBarAndSideMenuBar() {
+  return (
+    <>
+      <Navbar />
+      <SideMenuBar />
+      <Routes>
+        <Route path="/customersList" element={<CustomerList />} />
+        <Route path="/customerInfo/:id" element={<CustomerInfo />} />
+        <Route path="/subscriptionsList" element={<SubscriptionList />} />
+        <Route path="/SubscriptionInfo/:id" element={<SubscriptionInfo />} />
+        <Route path="/vouchersList" element={<VoucherList />} />
+        <Route path="/voucherInfo/:id" element={<VoucherInfo />} />
+        <Route path="/usersList" element={<UserList />} />
+        <Route path="/editUserInfo/:id" element={<EditUser />} />
+        <Route path="/createUser" element={<CreateUser />} />
+        <Route path="/vendorsList" element={<VendorList />} />
+        <Route path="/vendorInfo/:id" element={<VendorInfo />} />
+        <Route path="/createVendor" element={<CreateVendor />} />
+        <Route path="/createSubscription" element={<SubscriptionCreation />} />
+        <Route path="/createVoucher" element={<VoucherCreation />} />
+      </Routes>
+    </>
   );
 }
 
