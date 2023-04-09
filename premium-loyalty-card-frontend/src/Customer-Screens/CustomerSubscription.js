@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Table from "../Components/CustomTable";
 import PaginationRounded from "../Components/TablePagination";
+import '../Styles/TableSpace.css';
 
 const CustomerSubscription = () => {
   const [data, setData] = useState([]);
@@ -52,7 +53,7 @@ const CustomerSubscription = () => {
   }, [currentPage, data, itemsPerPage]);
 
   return (
-    <div>
+    <div className="table-space">
       <Table
         data={displayedData}
         columns={columns}

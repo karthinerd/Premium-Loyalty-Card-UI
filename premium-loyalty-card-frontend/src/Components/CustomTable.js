@@ -1,4 +1,5 @@
-import React from "react";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 import { useTable } from "react-table";
 import "../Styles/CustomTable.css";
 import CustomButton from "./CustomButton";
@@ -15,8 +16,10 @@ const Table = ({
   clickableRows,
   buttonClassName,
   buttonTextName,
-  showButton ,
+  showButton,
   buttonPath,
+  showIcons,
+  icon
 }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({
@@ -38,6 +41,7 @@ const Table = ({
           className={buttonClassName}
           text={buttonTextName}
           onClick={handleClick}
+          icon={icon}
         />
       )}
       <div className={cardClassName}>
@@ -50,6 +54,9 @@ const Table = ({
                     {column.render("Header")}
                   </th>
                 ))}
+                {showIcons && ( // new code to show/hide icons
+                  <th></th>
+                )}
               </tr>
             ))}
           </thead>
@@ -66,6 +73,12 @@ const Table = ({
                       <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
                     );
                   })}
+                  {showIcons && ( // new code to show/hide icons
+                    <td>
+                      <EditIcon />
+                      <DeleteIcon style={{marginLeft:"28px"}}/>
+                    </td>
+                  )}
                 </tr>
               );
             })}

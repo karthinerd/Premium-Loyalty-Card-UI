@@ -1,11 +1,11 @@
 .tabs-container {
     padding-top: 10px; /* adjust as needed to avoid overlapping with navbar */
-    margin-left: 250px; /* adjust as needed to avoid overlapping with sidebar */
+    margin-left: 230px; /* adjust as needed to avoid overlapping with sidebar */
   }
 
 .back-button{
   padding-top: 90px; 
-  margin-left: 350px; 
+  margin-left: 310px; 
   display: flex;
   align-items: center;
 }

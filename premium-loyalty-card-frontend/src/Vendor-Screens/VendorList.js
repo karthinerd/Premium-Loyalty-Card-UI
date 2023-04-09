@@ -3,6 +3,7 @@ import Table from "../Components/CustomTable";
 import PaginationRounded from "../Components/TablePagination";
 import { useNavigate } from "react-router-dom";
 import "../Styles/CustomersList.css";
+import AddIcon from '@mui/icons-material/Add';
 
 const VendorList = () => {
   const [data, setData] = useState([]);
@@ -73,9 +74,10 @@ const VendorList = () => {
         cardClassName="card"
         clickableRows={true}
         buttonClassName="add-subscription "
-        buttonTextName="+ Create Vendor"
+        buttonTextName="Create Vendor"
         showButton='true'
         buttonPath='/createVendor'
+        icon={<AddIcon />}
       />
       <div className="pagination-container">
         <PaginationRounded

@@ -22,6 +22,9 @@ const PaginationRounded = ({
         variant="outlined"
         shape="rounded"
         sx={{
+          "& .MuiPaginationItem-root": {
+            backgroundColor: "white",
+          },
           "& .Mui-selected": {
             color: "orange",
           },

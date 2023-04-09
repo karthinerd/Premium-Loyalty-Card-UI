@@ -1,10 +1,11 @@
 import React from "react";
 import "../Styles/CustomButton.css";
 
-const CustomButton = ({ className, text, onClick }) => {
+const CustomButton = ({ className, text, onClick, icon }) => {
   return (
     <button className={className} onClick={onClick}>
-      {text}
+      {icon && <span className="icon">{icon}</span>}
+      <span className="text">{text}</span>
     </button>
   );
 };

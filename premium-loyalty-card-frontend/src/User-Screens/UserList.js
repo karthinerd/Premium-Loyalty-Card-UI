@@ -3,6 +3,7 @@ import Table from "../Components/CustomTable";
 import PaginationRounded from "../Components/TablePagination";
 import { useNavigate } from "react-router-dom";
 import "../Styles/CustomersList.css";
+import AddIcon from '@mui/icons-material/Add';
 
 const UserList = () => {
   const [data, setData] = useState([]);
@@ -65,9 +66,11 @@ const UserList = () => {
         cardClassName="card"
         clickableRows={true}
         buttonClassName="add-subscription "
-        buttonTextName="+ Create Users"
+        buttonTextName="Add User"
         showButton='true'
         buttonPath="/createUser"
+        showIcons='true'
+        icon={<AddIcon />}
       />
       <div className="pagination-container">
         <PaginationRounded

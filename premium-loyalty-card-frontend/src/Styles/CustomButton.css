@@ -2,15 +2,15 @@
     background-color: #F7F7F7; /* Green */
     border: 1px solid #225544;
     color: #225544;
-    width: 150px;
+    width: 180px;
     height: 50px;
-    left: 1378px;
-    top: 197px;
-    border-radius: 20px;
-    margin-left: 1080px;
-    margin-bottom: 10px;
+    border-radius: 30px;
+    margin-left: 1050px;
+    margin-bottom: 30px;
+    margin-top: 1px;
     cursor: pointer;
     font-family: inter;
+    font-weight: bold;
   }
   
   .edit-customer{
@@ -19,10 +19,11 @@
     color: white;
     width: 180px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     margin-left: 30px;
     cursor: pointer;
     font-family: inter;
+    font-weight: bold;
   }
 
   .edit-user-button{
@@ -31,11 +32,12 @@
     color: white;
     width: 180px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     margin-left: 30px;
     cursor: pointer;
     font-family: inter;
     margin-bottom: 66px;
+    font-weight: bold;
   }
 
   .save-user{
@@ -44,10 +46,11 @@
     color: white;
     width: 140px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     cursor: pointer;
     font-family: inter;
     margin-top: 20px;
+    font-weight: bold;
   }
   
   .cancel-save-user{
@@ -56,8 +59,21 @@
     color: #225544;
     width: 140px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     cursor: pointer;
     font-family: inter;
     margin-top: 20px;
+    font-weight: bold;
   }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px; 
+  }
+  

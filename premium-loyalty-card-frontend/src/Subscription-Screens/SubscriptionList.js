@@ -3,6 +3,8 @@ import Table from "../Components/CustomTable";
 import PaginationRounded from "../Components/TablePagination";
 import { useNavigate } from "react-router-dom";
 import "../Styles/CustomersList.css";
+import AddIcon from '@mui/icons-material/Add';
+
 
 const SubscriptionList = () => {
   const [data, setData] = useState([]);
@@ -73,7 +75,8 @@ const SubscriptionList = () => {
         cardClassName="card"
         clickableRows={true}
         buttonClassName="add-subscription "
-        buttonTextName="+Create Subscription"
+        buttonTextName='Create Subscription'
+        icon={<AddIcon />}
         showButton='true'
         buttonPath='/createSubscription'
       />
