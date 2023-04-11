@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/SideMenuBar.css";
 import { SidebarData } from "./SidebarData";
 import CompanyLogo from '../images/CompanyLogo.png';
+import LoginImage from '../images/imageAi.png';
 
 function SideMenuBar() {
   const currentPath = window.location.pathname;
@@ -32,6 +33,10 @@ function SideMenuBar() {
           );
         })}
       </ul>
+      <div className="profile-container">
+        <img src={LoginImage} alt="Profile" className="profileImg" />
+        <span className="profileName">John Doe</span>
+      </div>
     </div>
   );
 }

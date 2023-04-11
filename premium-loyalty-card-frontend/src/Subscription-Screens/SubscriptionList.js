@@ -79,6 +79,7 @@ const SubscriptionList = () => {
         icon={<AddIcon />}
         showButton='true'
         buttonPath='/createSubscription'
+        hoverRows={true}
       />
       <div className="pagination-container">
         <PaginationRounded

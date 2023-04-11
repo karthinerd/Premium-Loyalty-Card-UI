@@ -67,6 +67,7 @@ const EditVoucher = () => {
               value={firstName}
               onChange={handleFirstNameChange}
               className="firstName"
+              placeholder="Voucher name"
             />
           </div>
           <div>
@@ -87,6 +88,7 @@ const EditVoucher = () => {
             maxLength="250"
             value={description}
             className="description"
+            placeholder="Add some description..."
           />
           <div>
             <label htmlFor="contractStart">
@@ -109,10 +111,11 @@ const EditVoucher = () => {
               value={firstName}
               onChange={handleFirstNameChange}
               className="firstName"
+              placeholder="Set limit"
             />
           </div>
           <div>
-            <label htmlFor="License" style={{ marginRight: "235px" }}>
+            <label htmlFor="License" style={{ marginRight: "270px" }}>
               Original Price
             </label>
             <label htmlFor="phone">Discounted Price</label>
@@ -125,11 +128,12 @@ const EditVoucher = () => {
               onChange={handleFirstNameChange}
               className="firstName"
               style={{ marginRight: "70px" }}
+              placeholder="Original price"
             />
-            <input type="text" id="lastName" className="lastName" />
+            <input type="text" id="lastName" className="lastName"  placeholder="Discounted price" style={{ marginLeft: "24px" }} />
           </div>
           <div>
-            <label htmlFor="License" style={{ marginRight: "300px" }}>
+            <label htmlFor="License" style={{ marginRight: "320px" }}>
               Vendor
             </label>
             <label htmlFor="phone">Subscription Plan</label>
@@ -149,7 +153,7 @@ const EditVoucher = () => {
             />
           </div>
           <div>
-            <label htmlFor="License" style={{ marginRight: "203px" }}>
+            <label htmlFor="License" style={{ marginRight: "224px" }}>
               Voucher Category
             </label>
             <label htmlFor="phone">Discounted Percentage</label>
@@ -161,7 +165,7 @@ const EditVoucher = () => {
               onChange={handleSelect}
               placeholder="Select an option"
             />
-            <input type="number" id="lastName" className="lastName" />
+            <input type="number" id="lastName" className="lastName"  placeholder="Discounted price" style={{ marginRight: "29px" }} />
           </div>
           <div>
             <label htmlFor="License" style={{ marginRight: "250px" }}>

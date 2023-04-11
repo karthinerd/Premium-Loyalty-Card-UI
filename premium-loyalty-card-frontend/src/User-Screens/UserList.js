@@ -64,13 +64,14 @@ const UserList = () => {
         tableClassName="table"
         titleClassName="table-title"
         cardClassName="card"
-        clickableRows={true}
+        clickableRows={false}
         buttonClassName="add-subscription "
         buttonTextName="Add User"
         showButton='true'
         buttonPath="/createUser"
         showIcons='true'
         icon={<AddIcon />}
+        hoverRows={false}
       />
       <div className="pagination-container">
         <PaginationRounded

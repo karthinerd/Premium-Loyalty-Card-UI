@@ -72,6 +72,7 @@ const CustomerList = () => {
         titleClassName="table-title"
         cardClassName="card"
         clickableRows={true}
+        hoverRows={true}
       />
       <div className="pagination-container">
         <PaginationRounded

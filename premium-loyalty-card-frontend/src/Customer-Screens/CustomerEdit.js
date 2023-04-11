@@ -35,8 +35,9 @@ const CustomerEdit = () => {
               onChange={handleFirstNameChange}
               className="firstName"
               style={{ marginRight: "70px" }}
+              placeholder="Enter your First name"
             />
-            <input type="text" id="lastName" className="lastName" />
+            <input type="text" id="lastName" className="lastName" placeholder="Enter your last name"/>
           </div>
           <label htmlFor="email">Email Address</label>
           <input
@@ -45,9 +46,10 @@ const CustomerEdit = () => {
             value={firstName}
             onChange={handleFirstNameChange}
             className="Email"
+            placeholder="Enter Your Email-Id"
           />
           <label htmlFor="phone">Phone Number</label>
-          <input type="number" id="phone" className="phone" />
+          <input type="number" id="phone" className="phone" placeholder="Enter your phone number" />
           <div className="date">
             <span>Created on : 20th Jan 2023 at 12:30 PM</span>
           </div>

@@ -51,7 +51,6 @@ const SubscriptionCreation = () => {
             <label htmlFor="vendorName" style={{ marginRight: "203px" }}>
               Subscription Name
             </label>
-            <label htmlFor="emiratesId">Subscription Status</label>
           </div>
           <div className="fl">
             <input
@@ -61,7 +60,13 @@ const SubscriptionCreation = () => {
               onChange={handleFirstNameChange}
               className="firstName"
               style={{ marginRight: "170px" }}
+              placeholder="Subscription name"
             />
+          </div>
+          <div>
+            <label htmlFor="emiratesId">Subscription Status</label>
+          </div>
+          <div className="fl">
             <ButtonToggle checked={checked} onChange={handleToggle} />
           </div>
           <div>
@@ -70,9 +75,10 @@ const SubscriptionCreation = () => {
           <DescriptionEditor
             value={description}
             onChange={(content) => setDescription(content)}
+            placeholder='Add some description'
             />
           <div>
-            <label htmlFor="License" style={{ marginRight: "270px" }}>
+            <label htmlFor="License" style={{ marginRight: "310px" }}>
               Price
             </label>
             <label htmlFor="phone">Validity</label>
@@ -85,8 +91,9 @@ const SubscriptionCreation = () => {
               onChange={handleFirstNameChange}
               className="firstName"
               style={{ marginRight: "70px" }}
+              placeholder="Price"
             />
-            <input type="text" id="lastName" className="lastName" />
+            <input type="text" id="lastName" className="lastName" placeholder="Validity"/>
           </div>
           <CustomButton
             className="edit-customer"

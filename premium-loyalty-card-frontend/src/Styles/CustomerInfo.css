@@ -4,7 +4,7 @@
   }
 
 .back-button{
-  padding-top: 90px; 
+  padding-top: 10px; 
   margin-left: 310px; 
   display: flex;
   align-items: center;
@@ -17,8 +17,4 @@
   font-family: intern;
   color: #1B223E ;
   font-family: inter;
-}
-
-.make-grey{
-  background-color: rgb(221, 220, 220);
 }

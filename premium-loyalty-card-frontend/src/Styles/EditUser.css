@@ -1,134 +1,108 @@
-.edit-user-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-left: 250px;
-    background-color: #a4a2a2;
-    margin-top: 50px;
-  }
-
-  .new-user-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-left: 250px;
-    background-color: #a4a2a2;
-    margin-top: 80px;
-  }
-  
-  .edit-user-card {
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 40%;
-    margin: auto;
-  }
-
-  .edit-title{
+.new-user-container {
   display: flex;
   justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-family: inter;
-  color: #225544;
-  }
-
-  .new-title{
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-family: inter;
-    color: #EE9179;
-  }
-  
-  .edit-user-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .edit-user-label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    margin-right: 400px;
-    font-family: inter;
-    color: #9F9F9F;
-  }
-  
-  .edit-user-input {
-    padding: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    padding-right: 5px;
-    margin-right: 200px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    width: 100%;
-    font-size: 16px;
-    font-family: inter;
-  }
-  
-  .select-wrapper {
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-left: 300px;
-    margin-right: 290px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    width: 500px;
-    font-size: 16px;
-    font-family: inter;
-  }
-
-  .email-input {
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-left: 300px;
-    margin-right: 290px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    width: 450px;
-    font-size: 16px;
-    font-family: inter;
-  }
-
-.user-role-label{
-    margin-right: 430px;
-    font-family: inter;
-    color: #9F9F9F;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
+  align-items: center;
+  height: 100vh;
+  margin-left: 250px;
 }
 
-.user-email-label{
-    margin-right: 370px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-family: inter;
-    color: #9F9F9F;
+.edit-user-card {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.new-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new-title h2 {
+  color: #EE9179;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.edit-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.edit-user-label {
+  color: #1b223e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.edit-user-input {
+  border: 1px solid #1b223e;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.edit-user-input:focus {
+  border-color: #1b223e;
+}
+
+.user-email-label {
+  color: #1b223e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.email-input {
+  border: 1px solid #1b223e;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.email-input:focus {
+  border-color: #1b223e;
+}
+
+.user-role-label {
+  color: #1b223e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.select-wrapper {
+  border: 1px solid #1b223e;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.select-wrapper:focus {
+  border-color: #1b223e;
 }
 
 .button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: auto;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 300px;
+  margin: auto;
+}
+
+label
+{
+  text-align: left;
+}

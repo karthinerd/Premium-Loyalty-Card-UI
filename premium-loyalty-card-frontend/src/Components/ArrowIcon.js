@@ -5,7 +5,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   arrowIcon: {
-    fontSize: '40px',
+    fontSize: '35px',
     cursor:"pointer",
     color: '#1B223E',
     paddingTop:'4px',

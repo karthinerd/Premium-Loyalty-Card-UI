@@ -49,13 +49,14 @@ const CreateUser = () => {
               value={firstName}
               onChange={handleFirstNameChange}
               className="edit-user-input"
+              placeholder="Enter your first name"
             />
           </div>
           <div className="form-row">
             <label htmlFor="lastName" className="edit-user-label">
               Last Name
             </label>
-            <input type="text" id="lastName" className="edit-user-input" />
+            <input type="text" id="lastName" className="edit-user-input" placeholder="Enter your last name" />
           </div>
           <div className="form-row">
             <label htmlFor="email" className="user-email-label">
@@ -67,13 +68,14 @@ const CreateUser = () => {
               value={email}
               onChange={handleEmailChange}
               className="email-input"
+              placeholder="Enter your email address"
             />
           </div>
           <div className="form-row">
             <label htmlFor="password" className="edit-user-label">
               Password
             </label>
-            <input type="password" id="password" className="edit-user-input" />
+            <input type="password" id="password" className="edit-user-input" placeholder="Enter Your Password" />
           </div>
           <div className="form-row">
             <label htmlFor="role" className="user-role-label">

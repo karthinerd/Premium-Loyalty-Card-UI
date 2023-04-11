@@ -1,11 +1,11 @@
 .add-subscription {
     background-color: #F7F7F7; /* Green */
-    border: 1px solid #225544;
-    color: #225544;
+    border: 1px solid #1B223E;
+    color: #1B223E;
     width: 180px;
     height: 50px;
     border-radius: 30px;
-    margin-left: 1050px;
+    margin-left: 1017px;
     margin-bottom: 30px;
     margin-top: 1px;
     cursor: pointer;
@@ -20,23 +20,23 @@
     width: 180px;
     height: 40px;
     border-radius: 40px;
-    margin-left: 30px;
+    margin-left: 1px;
     cursor: pointer;
     font-family: inter;
     font-weight: bold;
+    font-size: 18px;
   }
 
   .edit-user-button{
-    background-color: #6D640F; /* Green */
-    border: 1px solid #6D640F;
+    background-color: #1B223E;
+    border: 1px solid #1B223E;
     color: white;
     width: 180px;
     height: 40px;
     border-radius: 40px;
-    margin-left: 30px;
     cursor: pointer;
     font-family: inter;
-    margin-bottom: 66px;
+    margin-bottom: 6px;
     font-weight: bold;
   }
 
@@ -55,8 +55,8 @@
   
   .cancel-save-user{
     background-color: #F7F7F7;
-    border: 1px solid #225544;
-    color: #225544;
+    border: 1px solid #1B223E;
+    color: #1B223E;
     width: 140px;
     height: 40px;
     border-radius: 40px;

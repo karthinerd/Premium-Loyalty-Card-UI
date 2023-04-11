@@ -82,6 +82,7 @@ const VoucherList = () => {
         showButton='true'
         buttonPath='/createVoucher'
         icon={<AddIcon />}
+        hoverRows={true}
       />
       <div className="pagination-container">
         <PaginationRounded

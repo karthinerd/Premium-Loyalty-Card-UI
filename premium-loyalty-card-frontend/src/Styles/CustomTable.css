@@ -4,7 +4,7 @@
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin-left: 80px ;
+    margin-left: 50px ;
     width: 85%;
   }
 
@@ -19,29 +19,35 @@
   td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #EDDDDC;
   }
   
   th {
     font-weight: bold;
-    background-color: #f9f9f9;
     position: sticky;
     top: 0;
     font-family: inter;
+    color: #1B203B;
+    font-size: 18px;
   }
+
 
   td {
     font-family: inter;
+    color: #1B203B;
+    font-size: 15px;
   }
   
-  tr:hover {
-    background-color: #f5f5f5;
+  .table-body-hover > tr:hover {
+    background-color: #efeeee !important;
+    cursor: pointer;
   }
+  
   
   .table {
     padding-left: 225px;
-    padding-bottom: 30px;
-    background-color: rgb(221, 220, 220);
+    padding-bottom: 10px;
+    background-color: #f7f7f7;
     margin-left: 20px;
   }
 
@@ -49,8 +55,19 @@
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 10px;
-    margin-left: 81px;
-    color: #1B223E;
-    padding-top: 90px;
+    margin-left: 50px;
+    color: #EE9179;
+    padding-top: 10px;
     font-family: inter;
   }
+
+  tr {
+    border-bottom: 2px solid #EDDDDC; /* replace red with the color of your choice */
+  }
+
+  .icon-hover-blue:hover {
+    color: #1B203B !important;
+    cursor: pointer;
+  }
+  
+  

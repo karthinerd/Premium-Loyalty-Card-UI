@@ -22,7 +22,7 @@ const MyTable = () => {
 
 
   return (
-    <div className="make-grey">
+    <div className="info">
       <div className="back-button">
         <ArrowIcon destination="/customersList"/>
         <h1 className="customer-name">Karthi</h1>

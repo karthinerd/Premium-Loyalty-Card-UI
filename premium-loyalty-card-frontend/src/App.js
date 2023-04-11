@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
 import SideMenuBar from "./Components/SideMenuBar";
 import CustomerList from "./Customer-Screens/CustomerList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -17,6 +16,7 @@ import CreateUser from "./User-Screens/CreateUser";
 import CreateVendor from "./Vendor-Screens/CreateVendor";
 import SubscriptionCreation from "./Subscription-Screens/SubscriptionCreation";
 import VoucherCreation from "./Voucher-Screens/CreateVoucher";
+// import LoginForm from "./Login/LoginForm";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          {/* <Route path="/loginForm" element={<LoginForm />} /> */}
           <Route path="/*" element={<WithNavBarAndSideMenuBar />} />
         </Routes>
       </Router>
@@ -34,7 +35,6 @@ function App() {
 function WithNavBarAndSideMenuBar() {
   return (
     <>
-      <Navbar />
       <SideMenuBar />
       <Routes>
         <Route path="/customersList" element={<CustomerList />} />

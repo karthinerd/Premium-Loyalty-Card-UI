@@ -1,5 +1,5 @@
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 import { useTable } from "react-table";
 import "../Styles/CustomTable.css";
 import CustomButton from "./CustomButton";
@@ -19,7 +19,8 @@ const Table = ({
   showButton,
   buttonPath,
   showIcons,
-  icon
+  icon,
+  hoverRows,
 }) => {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({
@@ -31,6 +32,11 @@ const Table = ({
 
   const handleClick = () => {
     navigate(buttonPath);
+  };
+
+  const handleEditClick = (row) => {
+    const id = row.original.id;
+    navigate(`/editUserInfo/${id}`);
   };
 
   return (
@@ -60,7 +66,11 @@ const Table = ({
               </tr>
             ))}
           </thead>
-          <tbody {...getTableBodyProps()}>
+          <tbody
+            {...getTableBodyProps({
+              className: hoverRows ? "table-body-hover" : "table-body",
+            })}
+          >
             {rows.map((row, i) => {
               prepareRow(row);
               return (
@@ -73,10 +83,17 @@ const Table = ({
                       <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
                     );
                   })}
-                  {showIcons && ( // new code to show/hide icons
-                    <td>
-                      <EditIcon />
-                      <DeleteIcon style={{marginLeft:"28px"}}/>
+                  {showIcons && (
+                    <td style={{ width: "80px" }}>
+                      <EditIcon
+                        style={{ color: "#ccc" }}
+                        className="icon-hover-blue"
+                        onClick={() => handleEditClick(row)}
+                      />
+                      <DeleteIcon
+                        style={{ color: "#ccc", marginLeft: "12px" }}
+                        className="icon-hover-blue"
+                      />
                     </td>
                   )}
                 </tr>

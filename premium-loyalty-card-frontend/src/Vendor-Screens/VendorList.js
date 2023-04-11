@@ -78,6 +78,7 @@ const VendorList = () => {
         showButton='true'
         buttonPath='/createVendor'
         icon={<AddIcon />}
+        hoverRows={true}
       />
       <div className="pagination-container">
         <PaginationRounded

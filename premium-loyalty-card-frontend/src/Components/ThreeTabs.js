@@ -16,7 +16,7 @@ const MyTabs = styled(Tabs)({
 
 const MyTab = styled(Tab)(({ isSelected }) => ({
   textTransform: "none",
-  fontSize: "14px",
+  fontSize: "18px",
   fontWeight: "bold",
   fontFamily:"inter",
   padding: "10px",
@@ -24,15 +24,13 @@ const MyTab = styled(Tab)(({ isSelected }) => ({
   paddingLeft:"100px",
   paddingRight:"100px",
   color: isSelected ? "#1B223E" : "#7B7B7B",
-  border: "1px solid #CCD2EE",
-  borderRadius: "1px",
-  boxShadow: isSelected
-    ? "0px 0px 12px rgba(238, 145, 121, 0.4), 0px 0px 0px 4px rgba(255, 255, 255, 0.2)"
-    : "none",
   "&.Mui-selected": {
     color: "#1B223E",
   },
 }));
+
+
+
 
 function CenteredTabs(props) {
   const { tabs, tabComponents } = props;

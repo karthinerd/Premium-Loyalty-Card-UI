@@ -1,26 +1,27 @@
 .edit-vendor-title{
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
     font-family: inter;
-    color: #225544;
+    color: #1B223E;
     padding-bottom: 10px;
     }
 
     label{
         font-family: inter;
-        color: #9F9F9F;
+        color: #1B223E;
+        font-size: 18px;
     }
 
     .vendor-form {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 250px;
-        background-color: #a4a2a2;
+        margin-left: 20px;
+        background-color: #f7f7f7;
         margin-top: 50px;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 60px;
       }
     
       .vendor-card {
@@ -42,9 +43,9 @@
       
 
   .description{
-   border: 1px dotted;
-    width: 600px;
-    height:200px;
+   border: 1px dotted #1B223E;
+    width: 500px;
+    height:100px;
     margin-top:20px;
     font-family:'inter';
     margin-bottom: 30px;
@@ -52,6 +53,6 @@
 
   textarea:focus {
     outline: none; /* remove default focus outline */
-    border-color: #225355;
-    box-shadow: 0 0 3px #225355;
+    border-color: #1B223E;
+    box-shadow: 0 0 3px #1B223E;
   }

@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 18px;
 }
 
 label {
@@ -37,6 +37,7 @@ label {
   border-radius: 10px;
   padding: 10px;
   font-size: 18px;
+  border-color: #1B223E;
 }
 
 .Email {
@@ -63,10 +64,10 @@ button {
 }
 
 input {
-  color: black;
+  color: #1B223E;
   font-size: 18px;
-  border-color: #225355;
-  border: 1px solid #225355;
+  border-color: #1B223E;
+  border: 1px solid #1B223E;
   font-family: inter;
 }
 
@@ -79,8 +80,8 @@ input {
 
 input:focus {
   outline: none; /* remove default focus outline */
-  border-color: #225355;
-  box-shadow: 0 0 3px #225355;
+  border-color: #1B223E;
+  box-shadow: 0 0 3px #1B223E;
 }
 
 .profile-picture {
